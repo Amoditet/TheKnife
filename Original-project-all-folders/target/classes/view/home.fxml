@@ -31,3 +31,5 @@
             <Button fx:id="loginBtn" text="Login" styleClass="button-login" prefWidth="140" prefHeight="32" onAction="#handleLogin"/>
         </HBox>
     </VBox>
+
+</StackPane>
