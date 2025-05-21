@@ -35,8 +35,6 @@ public class RegisterController {
 
     @FXML
     private ImageView arrowImageView;
-    @FXML
-    private ImageView knifeImageView;
 
     @FXML
     private void initialize() {
@@ -48,8 +46,6 @@ public class RegisterController {
             whiteEffect.setBrightness(1.0);
             arrowImageView.setEffect(whiteEffect);
 
-            Image knifeImage = new Image(getClass().getResourceAsStream("/images/Knife.png"));
-            knifeImageView.setImage(knifeImage);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -119,7 +115,7 @@ public class RegisterController {
                 Parent root = loader.load();
                 Stage stage = (Stage) nomeField.getScene().getWindow();
                 System.out.println("Stage obtained: " + stage);
-                Scene scene = new Scene(root, 520, 450);
+                Scene scene = new Scene(root, 560, 540);
                 // scene.setFill(javafx.scene.paint.Color.TRANSPARENT);
                 stage.setScene(scene);
                 stage.show();
@@ -149,7 +145,7 @@ public class RegisterController {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/home.fxml"));
             Parent root = loader.load();
             Stage stage = (Stage) nomeField.getScene().getWindow();
-            Scene scene = new Scene(root, 540, 560);
+            Scene scene = new Scene(root, 560, 540);
             // scene.setFill(javafx.scene.paint.Color.TRANSPARENT);
             stage.setScene(scene);
             stage.show();

@@ -5,7 +5,7 @@
 /* Titolo grande con gradiente e ombra */
 .title-text {
     -fx-font-size: 65px;
-    -fx-fill: linear-gradient(to right, #FF0000, #8B0000);
+    -fx-fill: #FF0000;
     -fx-effect: dropshadow(gaussian, #8B0000, 6, 0.3, 0, 0);
 }
 

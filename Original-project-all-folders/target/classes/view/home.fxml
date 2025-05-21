@@ -17,14 +17,14 @@
     </HBox>
 
     <VBox spacing="20" alignment="CENTER" prefWidth="300">
-        <HBox alignment="CENTER" spacing="1" style="-fx-margin-bottom: 40px; -fx-translate-y: -20;">
-            <Text text="TheKn" styleClass="title-text"/>
-            <ImageView fitHeight="65" fitWidth="65" pickOnBounds="true" preserveRatio="true" style="-fx-translate-y: 4px; -fx-translate-x: -2px;">
+        <HBox alignment="CENTER" spacing="0" style="-fx-margin-bottom: 40px; -fx-translate-y: -20;">
+            <Text text="TheKn" styleClass="title-text" style="-fx-translate-x: 20px;"/>
+            <ImageView fx:id="knifeImage" fitHeight="65" fitWidth="65" pickOnBounds="true" preserveRatio="true" style="-fx-translate-y: 4px; -fx-translate-x: -3px;">
                 <image>
                     <Image url="@../images/Knife.png"/>
                 </image>
             </ImageView>
-            <Text text="fe" styleClass="title-text"/>
+            <Text text="fe" styleClass="title-text" style="-fx-translate-x: -22px;"/>
         </HBox>
         <HBox alignment="CENTER" spacing="20" prefWidth="300">
             <Button fx:id="registerBtn" text="Registrati" styleClass="button-register" prefWidth="140" prefHeight="32" onAction="#handleRegister"/>

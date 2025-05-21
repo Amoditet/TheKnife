@@ -25,8 +25,6 @@ public class LoginController {
 
     @FXML
     private ImageView arrowImageView;
-    @FXML
-    private ImageView knifeImageView;
 
     @FXML
     private void initialize() {
@@ -38,8 +36,6 @@ public class LoginController {
             whiteEffect.setBrightness(1.0);
             arrowImageView.setEffect(whiteEffect);
 
-            Image knifeImage = new Image(getClass().getResourceAsStream("/images/Knife.png"));
-            knifeImageView.setImage(knifeImage);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -92,7 +88,7 @@ public class LoginController {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/home.fxml"));
             Parent root = loader.load();
             Stage stage = (Stage) usernameField.getScene().getWindow();
-            Scene scene = new Scene(root, 540, 560);
+            Scene scene = new Scene(root, 560, 540);
             // scene.setFill(javafx.scene.paint.Color.TRANSPARENT);
             stage.setScene(scene);
             stage.show();

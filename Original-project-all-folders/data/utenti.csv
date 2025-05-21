@@ -2,3 +2,5 @@ nome,cognome,username,password,domicilio,ruolo
 Mario,Rossi,mrossi,12345,Milano,cliente
 Luca,Bianchi,lbianchi,abcde,Roma,ristoratore
 1,1,1,1,1,cliente
+
+1,1,10,10,1,cliente
