@@ -1,0 +1,142 @@
+.root {
+    -fx-background-color: transparent;
+}
+
+/* Titolo grande con gradiente e ombra */
+.title-text {
+    -fx-font-size: 65px;
+    -fx-fill: linear-gradient(to right, #FF0000, #8B0000);
+    -fx-effect: dropshadow(gaussian, #8B0000, 6, 0.3, 0, 0);
+}
+
+/* Stile per tutti i bottoni */
+.button {
+    -fx-background-color: linear-gradient(to bottom, #FF0000, #8B0000);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 16px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-background-insets: 0;
+    -fx-border-color: #FF0000;
+    -fx-border-width: 2;
+}
+
+.button-back {
+    -fx-background-color: transparent;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 0;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-padding: 0 0 0 0;
+    -fx-cursor: hand;
+    -fx-min-width: 25px;
+    -fx-min-height: 25px;
+    -fx-max-width: 25px;
+    -fx-max-height: 25px;
+    -fx-spacing: 10px;
+}
+
+/* Pulsante "X" */
+.button-exit {
+    -fx-background-color: transparent;
+    -fx-text-fill: #ff0000;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 0;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-padding: 0 0 0 0;
+    -fx-cursor: hand;
+    -fx-min-width: 80px;
+    -fx-min-height: 40px;
+    -fx-max-width: 80px;
+    -fx-max-height: 40px;
+}
+
+
+.button-exit:hover {
+    -fx-text-fill: #dc0000c5;
+    -fx-background-color: transparent;
+}
+
+/* Pulsante "Login" */
+.button-login {
+    -fx-background-color: linear-gradient(to bottom, #FF0000, #8B0000);
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+    -fx-pref-width: 140px;
+    -fx-pref-height: 32px;
+    -fx-font-size: 16px;
+    -fx-background-radius: 10;
+    -fx-border-color: #FF0000;
+    -fx-border-width: 2;
+}
+
+.button-login:hover {
+    -fx-text-fill: #000000;
+    -fx-background-color: transparent;
+}
+
+/* Pulsante "Register" */
+.button-register {
+    -fx-background-color: linear-gradient(to bottom, #FF0000, #8B0000);
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+    -fx-pref-width: 140px;
+    -fx-pref-height: 32px;
+    -fx-font-size: 16px;
+    -fx-background-radius: 10;
+    -fx-border-color: #FF0000;
+    -fx-border-width: 2;
+}
+
+.button-register:hover {
+    -fx-text-fill: #000000;
+    -fx-background-color: transparent;
+}
+
+/* Stile per AnchorPane */
+.AnchorPane {
+    -fx-background-color: linear-gradient(to bottom, #000000, #FF0000);
+}
+
+/* Stile per il pannello principale */
+.main-pane {
+    -fx-background-color: linear-gradient(to bottom, #000000, #FF0000);
+    -fx-border-radius: 20;
+    -fx-padding: 0;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+}
+
+/* Stile per i campi di testo e password */
+.text-field, .password-field {
+    -fx-background-color: #222;
+    -fx-text-fill: #fff;
+    -fx-background-radius: 10;
+    -fx-background-insets: 0;
+    -fx-border-width: 0;
+    -fx-font-size: 16px;
+}
+
+/* Custom checkbox style with red check and smooth corners */
+.checkbox-red .box {
+    -fx-background-color: white;
+    -fx-border-color: #FF0000;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-padding: 4;
+    -fx-fill-color: #FFFFFF;
+}
+
+.checkbox-red:selected .box {
+    -fx-background-color: #FF0000;
+}
+
+.checkbox-red .mark {
+    -fx-stroke: white;
+    -fx-stroke-width: 2;
+}

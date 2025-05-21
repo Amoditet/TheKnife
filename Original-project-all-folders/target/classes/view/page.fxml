@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="controller.PageController" prefHeight="370.0" prefWidth="450.0">
+    <children>
+        <Label text="Benvenuto nella nuova schermata!" layoutX="100.0" layoutY="150.0" style="-fx-font-size: 20px;" />
+        <Button fx:id="eventBtn" text="Cambia schermata" layoutX="150.0" layoutY="200.0" onAction="#handleButtonAction" />
+    </children>
+</AnchorPane>

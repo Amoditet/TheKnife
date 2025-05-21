@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml" fx:controller="theknife.controller.HomeController"
+           prefHeight="540" prefWidth="560"
+           stylesheets="@style.css"
+           style="-fx-background-color: linear-gradient(to bottom, #000000, #FF0000);"
+           alignment="CENTER">
+
+    <HBox alignment="TOP_RIGHT" spacing="10" prefWidth="560" style="-fx-padding: 5 10 5 10;" StackPane.alignment="TOP_RIGHT">
+        <Button fx:id="exitBtn" text="X" styleClass="button-exit" alignment="TOP_RIGHT" onAction="#handleExitAction" prefWidth="40" prefHeight="40" style="-fx-padding: 5;"/>
+    </HBox>
+
+    <VBox spacing="20" alignment="CENTER" prefWidth="300">
+        <HBox alignment="CENTER" spacing="1" style="-fx-margin-bottom: 40px; -fx-translate-y: -20;">
+            <Text text="TheKn" styleClass="title-text"/>
+            <ImageView fitHeight="65" fitWidth="65" pickOnBounds="true" preserveRatio="true" style="-fx-translate-y: 4px; -fx-translate-x: -2px;">
+                <image>
+                    <Image url="@../images/Knife.png"/>
+                </image>
+            </ImageView>
+            <Text text="fe" styleClass="title-text"/>
+        </HBox>
+        <HBox alignment="CENTER" spacing="20" prefWidth="300">
+            <Button fx:id="registerBtn" text="Registrati" styleClass="button-register" prefWidth="140" prefHeight="32" onAction="#handleRegister"/>
+            <Button fx:id="loginBtn" text="Login" styleClass="button-login" prefWidth="140" prefHeight="32" onAction="#handleLogin"/>
+        </HBox>
+    </VBox>
+
+</StackPane>
