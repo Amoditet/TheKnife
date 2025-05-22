@@ -31,7 +31,6 @@ public class LoginController {
         try {
             Image arrowImage = new Image(getClass().getResourceAsStream("/images/left-arrow.png"));
             arrowImageView.setImage(arrowImage);
-            // Apply white color effect to arrow image
             ColorAdjust whiteEffect = new ColorAdjust();
             whiteEffect.setBrightness(1.0);
             arrowImageView.setEffect(whiteEffect);
@@ -89,7 +88,6 @@ public class LoginController {
             Parent root = loader.load();
             Stage stage = (Stage) usernameField.getScene().getWindow();
             Scene scene = new Scene(root, 560, 540);
-            // scene.setFill(javafx.scene.paint.Color.TRANSPARENT);
             stage.setScene(scene);
             stage.show();
         } catch (Exception e) {

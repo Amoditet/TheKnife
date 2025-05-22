@@ -116,7 +116,6 @@ public class RegisterController {
                 Stage stage = (Stage) nomeField.getScene().getWindow();
                 System.out.println("Stage obtained: " + stage);
                 Scene scene = new Scene(root, 560, 540);
-                // scene.setFill(javafx.scene.paint.Color.TRANSPARENT);
                 stage.setScene(scene);
                 stage.show();
                 System.out.println("Navigation to dashboard.fxml successful");

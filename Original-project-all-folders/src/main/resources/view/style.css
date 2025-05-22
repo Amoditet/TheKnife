@@ -4,9 +4,8 @@
 
 /* Titolo grande con gradiente e ombra */
 .title-text {
-    -fx-font-size: 65px;
+    -fx-font-size: 75px;
     -fx-fill: #FF0000;
-    -fx-effect: dropshadow(gaussian, #8B0000, 6, 0.3, 0, 0);
 }
 
 /* Stile per tutti i bottoni */
@@ -39,21 +38,26 @@
     -fx-spacing: 10px;
 }
 
+.button-back:hover {
+    -fx-text-fill: #585858c5;
+    -fx-background-color: transparent;
+}
+
 /* Pulsante "X" */
 .button-exit {
-    -fx-background-color: transparent;
-    -fx-text-fill: #ff0000;
-    -fx-font-size: 20px;
-    -fx-font-weight: bold;
-    -fx-background-radius: 0;
-    -fx-border-color: transparent;
-    -fx-border-width: 0;
-    -fx-padding: 0 0 0 0;
     -fx-cursor: hand;
+    -fx-background-color: transparent; 
+    -fx-text-fill: #FF0000;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-padding: 5;
+    -fx-font-size: 20px;
     -fx-min-width: 80px;
     -fx-min-height: 40px;
     -fx-max-width: 80px;
     -fx-max-height: 40px;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
 }
 
 

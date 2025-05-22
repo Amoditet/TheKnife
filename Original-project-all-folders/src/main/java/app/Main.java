@@ -4,33 +4,34 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.paint.Color;
+
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-import java.net.URL;
+import theknife.controller.HomeController;
 
 public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        // Verifica se il file FXML esiste
-        URL fxmlLocation = getClass().getResource("/view/home.fxml");
-        if (fxmlLocation == null) {
-            throw new RuntimeException("File FXML non trovato: /view/home.fxml");
-        }
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/home.fxml"));
 
-        // Carica il file FXML
-        Parent root = FXMLLoader.load(fxmlLocation);
-        root.getStyleClass().add("rounded-pane");
+        Parent root = loader.load();
 
-        Scene scene = new Scene(root);
-        scene.setFill(null);
-        primaryStage.initStyle(StageStyle.TRANSPARENT);
+        HomeController controller = loader.getController();
 
-        primaryStage.setScene(scene);
+        controller.setPrimaryStage(primaryStage);
+
+        primaryStage.initStyle(StageStyle.UNDECORATED);
+
+        primaryStage.setTitle("TheKnife");
+
+        primaryStage.setScene(new Scene(root));
         primaryStage.show();
 
+        primaryStage.setOnCloseRequest(event -> {
+            System.exit(0);
+        });
     }
 
     public static void main(String[] args) {
