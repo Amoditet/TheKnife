@@ -10,6 +10,7 @@
 
 /* Stile per tutti i bottoni */
 .button {
+    -fx-cursor: hand;
     -fx-background-color: linear-gradient(to bottom, #FF0000, #8B0000);
     -fx-text-fill: white;
     -fx-font-weight: bold;
@@ -33,8 +34,6 @@
     -fx-cursor: hand;
     -fx-min-width: 25px;
     -fx-min-height: 25px;
-    -fx-max-width: 25px;
-    -fx-max-height: 25px;
     -fx-spacing: 10px;
 }
 
@@ -45,24 +44,22 @@
 
 /* Pulsante "X" */
 .button-exit {
-    -fx-cursor: hand;
-    -fx-background-color: transparent; 
-    -fx-text-fill: #FF0000;
+    -fx-background-color: linear-gradient(to bottom, #FF0000, #8B0000);
+    -fx-text-fill: #000000;
     -fx-font-weight: bold;
-    -fx-background-radius: 5;
+    -fx-background-radius: 10;
     -fx-padding: 5;
-    -fx-font-size: 20px;
-    -fx-min-width: 80px;
-    -fx-min-height: 40px;
-    -fx-max-width: 80px;
+    -fx-font-size: 16px;
+    -fx-min-width: 140px;
     -fx-max-height: 40px;
-    -fx-border-color: transparent;
-    -fx-border-width: 0;
+    -fx-border-color: #FF0000;
+    -fx-border-width: 2;
+    -fx-spacing: 15px;
 }
 
 
 .button-exit:hover {
-    -fx-text-fill: #dc0000c5;
+    -fx-text-fill: #000000;
     -fx-background-color: transparent;
 }
 

@@ -4,7 +4,7 @@
 <?import javafx.scene.text.Text?>
 
 <StackPane xmlns:fx="http://javafx.com/fxml" fx:controller="theknife.controller.DashboardController"
-           prefHeight="450" prefWidth="520"
+           prefHeight="540" prefWidth="560"
            style="-fx-background-color: linear-gradient(to bottom, #000000, #FF0000);"
            alignment="CENTER">
     <Text text="Dashboard" style="-fx-font-size: 44px; -fx-font-weight: bold; -fx-fill: white;"/>
